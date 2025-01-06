@@ -11,6 +11,10 @@ The main.m demonstrates a full workflow using example data:
 3. Calls fit_sigR_DSC to estimate tissue relaxivity (r2*) and post-preload tissue T1, using the DCE-derived parameters.
 4. Performs the final leakage correction on the DSC data, generating corrected Δ𝑅2∗ curves.
 
+# Note
+The optimized DCE-driven AIF was used for both DCE and DSC signal ratio model fit according to our previous papers. Please refer to (https://doi.org/10.1002/nbm.5038) and (https://doi.org/10.1002/nbm.5225). For large datasets, semi-automatic and automatic algorithm for AIF determination in DSC datasets might be applied. In that case, applying a linear (or nonlinear) conversion for transfering Δ𝑅2∗ measurment in DSC-AIF into concentration unit is neccessary prior to DSC model fit.
+In our case, the temporal resolutions in DCE and DSC scan are the same. While using DCE and DSC datasets with different temporal resolution, an interpolation process is encouraged.
+
 # Contact
 For questions or additional guidance, please contact:
 Chih-Hsien Tseng
